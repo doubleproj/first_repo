@@ -1,0 +1,15 @@
+$mysql_host = "localhost"; // sql сервер
+$mysql_user = "l29340eb_chat"; // пользователь
+$mysql_password = "123456789"; // пароль
+$mysql_database = "l29340eb_chat"; // имя базы данных chat
+}
+if (isset($_GET["client"])) { 
+    $client = $_GET['client'];
+}
+if (isset($_GET["text"])) { 
+    $text = $_GET['text'];
+}
+// ------------------------------------------- если action=select тогда получим еще data - от после какого времени передавать ответ
+if (isset($_GET["data"])) { 
+    $data = $_GET['data'];
+}
